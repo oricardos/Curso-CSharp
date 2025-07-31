@@ -19,27 +19,37 @@ namespace CursoCSharp
             _quantidade = quantidade;
         }
 
-        public void SetNome(string nome)
+        public string Nome
         {
-            if (nome != null && nome.Length > 1)
+            get
             {
-            _nome = nome;
+                return _nome;
+            }
+
+            set
+            {
+                if (value != null && value.Length > 1)
+                {
+                    _nome = value;
+                }
             }
         }
 
-        public double GetPreco()
+        public double Preco
         {
-            return _preco;
+            get { return _preco; }
         }
 
-        public int GetQuantidade()
+        public int Quantidade
         {
-            return _quantidade;
-        }
-
-        public string GetNome()
-        {
-            return _nome;
+            get { return _quantidade; }
+            set
+            {
+                if (value > 0)
+                {
+                    _quantidade = value;
+                }
+            }
         }
 
         public double ValorTotalEmEstoque()

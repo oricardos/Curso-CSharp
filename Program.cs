@@ -7,9 +7,12 @@ namespace CursoCSharp
     {
         static void Main(string[] args)
         {
-            Produto p = new Produto("TV", 500.00, 10);
-            p.SetNome("P");
-            Console.WriteLine(p.GetNome());
+            Produto p = new Produto("TV", 500.00, 0);
+            p.Nome = "P";
+            Console.WriteLine(p.Nome);
+
+            p.Quantidade = 0;
+            Console.WriteLine(p.Quantidade);
         }
     }
 }

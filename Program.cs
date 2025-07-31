@@ -20,8 +20,6 @@ namespace CursoCSharp
 
             Produto p = new Produto(nome, preco, quantidade);
 
-
-
             Console.WriteLine();
             Console.WriteLine("Dados do produto: " + p);
             Console.WriteLine();

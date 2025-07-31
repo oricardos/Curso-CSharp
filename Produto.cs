@@ -18,6 +18,7 @@ namespace CursoCSharp
         {
             Nome = nome;
             Preco = preco;
+            // por padrão, quantidade ja fica com o valor 0
         }
         public double ValorTotalEmEstoque()
         {

@@ -10,9 +10,6 @@ namespace CursoCSharp
             Produto p = new Produto("TV", 500.00, 0);
             p.Nome = "P";
             Console.WriteLine(p.Nome);
-
-            p.Quantidade = 0;
-            Console.WriteLine(p.Quantidade);
         }
     }
 }

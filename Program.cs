@@ -20,6 +20,14 @@ namespace CursoCSharp
 
             Produto p = new Produto(nome, preco, quantidade);
 
+            // sintaxe alternativa, mas é necessário um construtor vazio
+            // Produto p = new Produto()
+            // {
+            //     Nome = "TV",
+            //     Preco = 500.00,
+            //     Quantidade = 10
+            // };
+
             Console.WriteLine();
             Console.WriteLine("Dados do produto: " + p);
             Console.WriteLine();

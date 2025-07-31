@@ -6,20 +6,27 @@ namespace CursoCSharp
         public string Nome;
         public double Preco;
         public int Quantidade;
-        // constructor 
-        public Produto(string nome, double preco, int quantidade)
+
+        public Produto()
         {
-            Nome = nome;
-            Preco = preco;
-            Quantidade = quantidade;
+            Quantidade = 10;
         }
-        // sobrecarga
-        public Produto(string nome, double preco)
+
+        public Produto(string nome, double preco) : this()
         {
             Nome = nome;
             Preco = preco;
             // por padrão, a quantidade ja fica com o valor 0
         }
+
+        // constructor 
+        public Produto(string nome, double preco, int quantidade) : this(nome, preco)
+        {
+            Quantidade = 10;
+        }
+        // sobrecarga
+        
+
         public double ValorTotalEmEstoque()
         {
             return Preco * Quantidade;

@@ -1,19 +1,17 @@
 using System;
 using System.Globalization;
 
-namespace CursoCSharp
+public class ArrayClass
 {
-    class Array
+    public static void Executar()
     {
-        static void Main(string[] args)
-        {
             int n = int.Parse(Console.ReadLine());
 
             double[] vect = new double[n];
 
             for(int i = 0; i < n; i++)
             {
-                vect[i] = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture)
+                vect[i] = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
             }
 
             double sum = 0.0;
@@ -24,9 +22,8 @@ namespace CursoCSharp
 
             }
 
-            double avg = sum / 3;
+            double avg = sum / n;
 
-            Console.WriteLine("Average Height = " + avg.ToString("F2", CultureInfo.InvariantCulture))
+            Console.WriteLine("Average Height = " + avg.ToString("F2", CultureInfo.InvariantCulture));
         }
-    }
 }

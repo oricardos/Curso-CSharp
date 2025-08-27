@@ -79,7 +79,7 @@ namespace CursoCSharp
 
              Console.WriteLine("Média " + avg.ToString("F2", CultureInfo.InvariantCulture));*/
 
-            Student[] rooms = new Student[10];
+            /*Student[] rooms = new Student[10];
             Console.Write("How many rooms will be rented? ");
             int rentedRooms = int.Parse(Console.ReadLine());
 
@@ -108,7 +108,12 @@ namespace CursoCSharp
                 {
                     Console.WriteLine(i + ": " + rooms[i].Name + ", " + rooms[i].Email);
                 }
-            }
+            }*/
+
+
+            int s1 = Calculator.Sum(10, 20, 30);
+
+            Console.WriteLine("Soma: " + s1);
         }
     }
 }

@@ -12,5 +12,15 @@ namespace CursoCSharp
 
             return sum;
         }
+
+        public static void Triple(ref int x)
+        {
+            x *= 3;
+        }
+
+        public static void Quadruple(int origin, out int result)
+        {
+            result = origin * 4;
+        }
     }
 }

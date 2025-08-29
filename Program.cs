@@ -111,13 +111,15 @@ namespace CursoCSharp
             }*/
 
 
-            int s1 = Calculator.Sum(10, 20, 30);
-            int a = 10;
-            int quadruple;
-            Calculator.Triple(ref a);
-            Calculator.Quadruple(a, out quadruple);
-            Console.WriteLine(a);
-            Console.WriteLine(quadruple);
+            // int s1 = Calculator.Sum(10, 20, 30);
+            // int a = 10;
+            // int quadruple;
+            // Calculator.Triple(ref a);
+            // Calculator.Quadruple(a, out quadruple);
+            // Console.WriteLine(a);
+            // Console.WriteLine(quadruple);
+
+            ListAula.Exercise();
         }
     }
 }

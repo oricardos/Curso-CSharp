@@ -119,7 +119,7 @@ namespace CursoCSharp
             // Console.WriteLine(a);
             // Console.WriteLine(quadruple);
 
-            ListAula.Exercise();
+            Matriz.Exercise2();
         }
     }
 }

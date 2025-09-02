@@ -1,5 +1,8 @@
 ﻿using System;
 using System.Globalization;
+using CursoCSharp.Entities;
+using CursoCSharp.Entities.Enums;
+
 namespace CursoCSharp
 {
     class Program
@@ -119,7 +122,30 @@ namespace CursoCSharp
             // Console.WriteLine(a);
             // Console.WriteLine(quadruple);
 
-            Matriz.Exercise2();
+            //Date.Aula();
+
+            //Enums
+            Order order = new Order
+            {
+                Id = 1080,
+                Moment = DateTime.Now,
+                Status = OrderStatus.PendingPayment
+            };
+
+            System.Console.WriteLine(order);
+
+            //Conversão de enums para string
+            string txt = OrderStatus.PendingPayment.ToString();
+            System.Console.WriteLine(txt);
+
+            OrderStatus statusProcessing = OrderStatus.Processing;
+            string statusProcessingString = Enum.GetName(statusProcessing);
+            System.Console.WriteLine(statusProcessingString);
+
+            // Conversão de String para Enum
+            OrderStatus os = Enum.Parse<OrderStatus>("Delivered");
+            System.Console.WriteLine(os);
+
         }
     }
 }

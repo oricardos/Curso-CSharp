@@ -148,6 +148,8 @@ namespace CursoCSharp
              System.Console.WriteLine(os);
             */
 
+
+            /* Exercício resolvido 1
             System.Console.Write("Enter department's name: ");
             string deptName = Console.ReadLine();
 
@@ -194,7 +196,12 @@ namespace CursoCSharp
 
             System.Console.WriteLine($"Name: {worker.Name}");
             System.Console.WriteLine($"Department: {worker.Department.Name}");
-            System.Console.WriteLine($"Income for {monthAndYear}: {worker.Income(year, month).ToString("F2", CultureInfo.InvariantCulture)}");
+            System.Console.WriteLine($"Income for {monthAndYear}: {worker.Income(month, year).ToString("F2", CultureInfo.InvariantCulture)}");
+            */
+
+            /*
+                Exercício resolvido 2
+            */
 
 
         }

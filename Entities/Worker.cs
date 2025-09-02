@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Diagnostics.Contracts;
 using CursoCSharp.Entities.Enums;
 
 namespace CursoCSharp.Entities
@@ -12,28 +13,39 @@ namespace CursoCSharp.Entities
         public Department Department { get; set; }
         public List<HourContract> Contracts { get; set; } = new List<HourContract>();
 
-        // Construtor
-        public Worker(string name, WorkerLevel level, double baseSalary)
+        // Construtores
+        public Worker() { }
+        public Worker(string name, WorkerLevel level, double baseSalary, Department department)
         {
             Name = name;
             Level = level;
             BaseSalary = baseSalary;
+            Department = department;
         }
 
         // Métodos
         public void AddContract(HourContract contract)
         {
-
+            Contracts.Add(contract);
         }
 
         public void RemoveContract(HourContract contract)
         {
-
+            Contracts.Remove(contract);
         }
 
         public double Income(int year, int month)
         {
-            return
+            double sum = BaseSalary;
+            foreach (HourContract contract in Contracts)
+            {
+                if (contract.Date.Year == year && contract.Date.Month == month)
+                {
+                    sum += contract.TotalValue();
+                }
+
+            }
+            return sum;
         }
     }
 }

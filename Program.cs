@@ -201,7 +201,79 @@ namespace CursoCSharp
 
             /*
                 Exercício resolvido 2
+            
+            Comment c1 = new Comment("Have a nice trip");
+            Comment c2 = new Comment("Wow that's awesome!");
+
+            Post p1 = new Post(
+                DateTime.Parse("02/09/2025 15:25:55"),
+                "Traveling to New Zealand",
+                "I'm going to visit this wonderful country!",
+                12
+            );
+
+            p1.AddComment(c1);
+            p1.AddComment(c2);
+
+            Comment c3 = new Comment("Good night");
+            Comment c4 = new Comment("May the Force be with you");
+
+            Post p2 = new Post(
+                DateTime.Parse("02/09/2025 15:29:30"),
+                "Good night guys!!",
+                "See you tomorrow",
+                15
+            );
+
+            p2.AddComment(c3);
+            p2.AddComment(c4);
+
+            System.Console.WriteLine(p1);
+            System.Console.WriteLine(p2);
             */
+
+            //Exercício proposto
+
+            System.Console.WriteLine("Enter client data: ");
+            System.Console.Write("Name: ");
+            string name = Console.ReadLine();
+            System.Console.Write("Email: ");
+            string email = Console.ReadLine();
+            System.Console.WriteLine("Birth Date (DD/MM/YYYY)");
+            DateTime birthDate = DateTime.ParseExact(Console.ReadLine(), "dd/MM/yyyy", CultureInfo.InvariantCulture);
+
+            System.Console.WriteLine("Enter order data: ");
+            OrderStatus status = Enum.Parse<OrderStatus>(Console.ReadLine());
+
+            Client client = new Client(name, email, birthDate);
+            Order order = new Order(DateTime.Now, status, client);
+
+
+            System.Console.Write("How many items to this order: ");
+            int n = int.Parse(Console.ReadLine());
+
+            for (int i = 1; i <= n; i++)
+            {
+                System.Console.WriteLine($"Enter #{i} item data: ");
+                System.Console.Write("Product Name: ");
+                string productName = Console.ReadLine();
+                System.Console.Write("Product Price: ");
+                double productPrice = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+                Product product = new Product(productName, productPrice);
+
+                System.Console.Write("Quantity: ");
+                int quantity = int.Parse(Console.ReadLine());
+
+                OrderItem orderItem = new OrderItem(quantity, productPrice, product);
+
+                order.AddItem(orderItem);
+
+            }
+
+            System.Console.WriteLine("Order Summary: ");
+            System.Console.WriteLine(order);
+
 
 
         }

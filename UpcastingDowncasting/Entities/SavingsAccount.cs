@@ -16,5 +16,18 @@ namespace UpcastingDowncasting.Entities
         {
             Balance += Balance * InterestRate;
         }
+
+        public override void Withdraw(double amount)
+        {
+            // Sobrescrevendo o modo como o método funciona,
+            // nesse caso não é descontado nada
+            //Balance -= amount;
+
+            // nesse caso o saque ocorre como na superclasse
+            // valor mais 5
+            base.Withdraw(amount);
+            // e agora desconta + 2 do valor
+            Balance -= 2.0;
+        }
     }
 }

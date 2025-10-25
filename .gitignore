@@ -51,3 +51,6 @@ secrets.json
 
 # Dotnet watch
 *.dotnet-watch.json
+
+.vs
+.vs/

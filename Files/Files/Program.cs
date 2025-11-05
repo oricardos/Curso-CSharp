@@ -35,17 +35,44 @@ namespace HelloWorld
             //FILESTREAM
             //https://learn.microsoft.com/pt-br/dotnet/api/system.io.filestream?view=net-8.0
 
+            //string path = @"c:\projetos\file1.txt";
+            //StreamReader sr = null;
+
+            //try
+            //{
+            //    sr = File.OpenText(path);
+
+            //    while (!sr.EndOfStream)
+            //    {
+            //        string line = sr.ReadLine();
+            //        Console.WriteLine(line);
+            //    }
+
+            //}
+            //catch (IOException e)
+            //{
+            //    Console.WriteLine("An error occurred");
+            //    Console.WriteLine(e.Message);
+            //}
+            //finally
+            //{
+            //    if (sr != null) sr.Close();
+            //}
+
+            //using block
+            //https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/statements/using
+
             string path = @"c:\projetos\file1.txt";
-            StreamReader sr = null;
 
             try
             {
-                sr = File.OpenText(path);
-
-                while (!sr.EndOfStream)
+                using (StreamReader sr = File.OpenText(path))
                 {
-                    string line = sr.ReadLine();
-                    Console.WriteLine(line);
+                    while (!sr.EndOfStream)
+                    {
+                        string line = sr.ReadLine();
+                        Console.WriteLine(line);
+                    }
                 }
 
             }
@@ -54,10 +81,7 @@ namespace HelloWorld
                 Console.WriteLine("An error occurred");
                 Console.WriteLine(e.Message);
             }
-            finally
-            {
-                if (sr != null) sr.Close();
-            }
+
         }
     }
 }

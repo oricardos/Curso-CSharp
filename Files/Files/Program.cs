@@ -82,21 +82,48 @@ namespace HelloWorld
             //    Console.WriteLine(e.Message);
             //}
 
-            string sourcePath = @"c:\projetos\file1.txt";
-            string targetPath = @"c:\projetos\file2.txt";
+            //string sourcePath = @"c:\projetos\file1.txt";
+            //string targetPath = @"c:\projetos\file2.txt";
 
+
+            //try
+            //{
+            //    string[] lines = File.ReadAllLines(sourcePath);
+
+            //    using (StreamWriter sw = File.AppendText(targetPath))
+            //    {
+            //        foreach (string line in lines)
+            //        {
+            //            sw.WriteLine(line.ToUpper());
+            //        }
+            //    }
+            //}
+            //catch (IOException e)
+            //{
+            //    Console.WriteLine("An error occurred");
+            //    Console.WriteLine(e.Message);
+            //}
+
+            // Directory, DirectoryInfo
+            string path = @"c:\projetos\myfolder";
 
             try
             {
-                string[] lines = File.ReadAllLines(sourcePath);
-
-                using (StreamWriter sw = File.AppendText(targetPath))
+                IEnumerable<string> folders = Directory.EnumerateDirectories(path, "*.*", SearchOption.AllDirectories);
+                Console.WriteLine("Folders: ");
+                foreach(string folder in folders)
                 {
-                    foreach (string line in lines)
-                    {
-                        sw.WriteLine(line.ToUpper());
-                    }
+                    Console.WriteLine(folder);
                 }
+
+                IEnumerable<string> files = Directory.EnumerateFiles(path, "*.*", SearchOption.AllDirectories);
+                Console.WriteLine("Files");
+                foreach(string file in files)
+                {
+                    Console.WriteLine(file);
+                }
+
+                Directory.CreateDirectory(path + @"\newfolder");
             }
             catch (IOException e)
             {

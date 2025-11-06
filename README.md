@@ -619,4 +619,81 @@ Saldo não pode ser negativo!
 
 ---
 
+## 🧮 Propriedades Calculadas
+
+Uma **propriedade calculada** (ou *computed property*) é uma propriedade que **não armazena um valor diretamente**, mas **retorna um resultado baseado em outros atributos** da classe.
+
+Ou seja, ela **calcula o valor sob demanda**, em vez de guardar um campo na memória.
+
+---
+
+### 💡 Exemplo simples
+
+```csharp
+public class Retangulo
+{
+    public double Largura { get; set; }
+    public double Altura { get; set; }
+
+    // Propriedade calculada
+    public double Area
+    {
+        get { return Largura * Altura; }
+    }
+}
+```
+
+```csharp
+Retangulo r = new Retangulo { Largura = 5, Altura = 3 };
+Console.WriteLine($"Área: {r.Area}");
+```
+
+📝 **Saída:**
+
+```
+Área: 15
+```
+
+> 🔹 A propriedade `Area` é **calculada automaticamente** toda vez que for acessada, sem precisar de um campo `area` armazenado.
+
+---
+
+### ⚙️ Propriedades somente leitura (com expressão simplificada)
+
+Para casos simples, você pode usar **“expression-bodied properties”**, uma sintaxe mais curta:
+
+```csharp
+public class Pessoa
+{
+    public string Nome { get; set; }
+    public string Sobrenome { get; set; }
+
+    public string NomeCompleto => $"{Nome} {Sobrenome}";
+}
+```
+
+```csharp
+Pessoa p = new Pessoa { Nome = "Maria", Sobrenome = "Oliveira" };
+Console.WriteLine(p.NomeCompleto);
+```
+
+📝 **Saída:**
+
+```
+Maria Oliveira
+```
+
+> 💬 O `=>` indica que o valor é calculado e retornado diretamente.
+
+---
+
+### 💬 Quando usar propriedades calculadas
+
+Use esse tipo de propriedade quando:
+
+* O valor **depende de outros atributos**;
+* Você quer **evitar redundância** (não armazenar o mesmo dado em mais de um lugar);
+* Precisa garantir que o valor **esteja sempre atualizado**.
+
+---
 

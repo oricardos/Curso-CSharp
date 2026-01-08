@@ -1,0 +1,15 @@
+C:\workspace\Curso-CSharp\balta.io\StopWatch\bin\Debug\net9.0\StopWatch.exe
+C:\workspace\Curso-CSharp\balta.io\StopWatch\bin\Debug\net9.0\StopWatch.deps.json
+C:\workspace\Curso-CSharp\balta.io\StopWatch\bin\Debug\net9.0\StopWatch.runtimeconfig.json
+C:\workspace\Curso-CSharp\balta.io\StopWatch\bin\Debug\net9.0\StopWatch.dll
+C:\workspace\Curso-CSharp\balta.io\StopWatch\bin\Debug\net9.0\StopWatch.pdb
+C:\workspace\Curso-CSharp\balta.io\StopWatch\obj\Debug\net9.0\StopWatch.GeneratedMSBuildEditorConfig.editorconfig
+C:\workspace\Curso-CSharp\balta.io\StopWatch\obj\Debug\net9.0\StopWatch.AssemblyInfoInputs.cache
+C:\workspace\Curso-CSharp\balta.io\StopWatch\obj\Debug\net9.0\StopWatch.AssemblyInfo.cs
+C:\workspace\Curso-CSharp\balta.io\StopWatch\obj\Debug\net9.0\StopWatch.csproj.CoreCompileInputs.cache
+C:\workspace\Curso-CSharp\balta.io\StopWatch\obj\Debug\net9.0\StopWatch.sourcelink.json
+C:\workspace\Curso-CSharp\balta.io\StopWatch\obj\Debug\net9.0\StopWatch.dll
+C:\workspace\Curso-CSharp\balta.io\StopWatch\obj\Debug\net9.0\refint\StopWatch.dll
+C:\workspace\Curso-CSharp\balta.io\StopWatch\obj\Debug\net9.0\StopWatch.pdb
+C:\workspace\Curso-CSharp\balta.io\StopWatch\obj\Debug\net9.0\StopWatch.genruntimeconfig.cache
+C:\workspace\Curso-CSharp\balta.io\StopWatch\obj\Debug\net9.0\ref\StopWatch.dll

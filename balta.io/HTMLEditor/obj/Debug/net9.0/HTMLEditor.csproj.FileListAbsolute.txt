@@ -1,0 +1,15 @@
+C:\workspace\Curso-CSharp\balta.io\HTMLEditor\obj\Debug\net9.0\HTMLEditor.GeneratedMSBuildEditorConfig.editorconfig
+C:\workspace\Curso-CSharp\balta.io\HTMLEditor\obj\Debug\net9.0\HTMLEditor.AssemblyInfoInputs.cache
+C:\workspace\Curso-CSharp\balta.io\HTMLEditor\obj\Debug\net9.0\HTMLEditor.AssemblyInfo.cs
+C:\workspace\Curso-CSharp\balta.io\HTMLEditor\obj\Debug\net9.0\HTMLEditor.csproj.CoreCompileInputs.cache
+C:\workspace\Curso-CSharp\balta.io\HTMLEditor\obj\Debug\net9.0\HTMLEditor.sourcelink.json
+C:\workspace\Curso-CSharp\balta.io\HTMLEditor\bin\Debug\net9.0\HTMLEditor.exe
+C:\workspace\Curso-CSharp\balta.io\HTMLEditor\bin\Debug\net9.0\HTMLEditor.deps.json
+C:\workspace\Curso-CSharp\balta.io\HTMLEditor\bin\Debug\net9.0\HTMLEditor.runtimeconfig.json
+C:\workspace\Curso-CSharp\balta.io\HTMLEditor\bin\Debug\net9.0\HTMLEditor.dll
+C:\workspace\Curso-CSharp\balta.io\HTMLEditor\bin\Debug\net9.0\HTMLEditor.pdb
+C:\workspace\Curso-CSharp\balta.io\HTMLEditor\obj\Debug\net9.0\HTMLEditor.dll
+C:\workspace\Curso-CSharp\balta.io\HTMLEditor\obj\Debug\net9.0\refint\HTMLEditor.dll
+C:\workspace\Curso-CSharp\balta.io\HTMLEditor\obj\Debug\net9.0\HTMLEditor.pdb
+C:\workspace\Curso-CSharp\balta.io\HTMLEditor\obj\Debug\net9.0\HTMLEditor.genruntimeconfig.cache
+C:\workspace\Curso-CSharp\balta.io\HTMLEditor\obj\Debug\net9.0\ref\HTMLEditor.dll

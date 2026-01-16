@@ -1,7 +1,24 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\workspace\\Curso-CSharp\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\workspace\\Curso-CSharp\\balta.io\\HTMLEditor\\Viewer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:balta.io\\HTMLEditor\\Viewer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\workspace\\Curso-CSharp\\balta.io\\HTMLEditor\\Editor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:balta.io\\HTMLEditor\\Editor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\workspace\\Curso-CSharp\\balta.io\\HTMLEditor\\Menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:balta.io\\HTMLEditor\\Menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\workspace\\Curso-CSharp\\balta.io\\HTMLEditor\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:balta.io\\HTMLEditor\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +26,63 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Viewer.cs",
+              "DocumentMoniker": "C:\\workspace\\Curso-CSharp\\balta.io\\HTMLEditor\\Viewer.cs",
+              "RelativeDocumentMoniker": "balta.io\\HTMLEditor\\Viewer.cs",
+              "ToolTip": "C:\\workspace\\Curso-CSharp\\balta.io\\HTMLEditor\\Viewer.cs",
+              "RelativeToolTip": "balta.io\\HTMLEditor\\Viewer.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAIwCEAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-09T12:11:52.107Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Editor.cs",
+              "DocumentMoniker": "C:\\workspace\\Curso-CSharp\\balta.io\\HTMLEditor\\Editor.cs",
+              "RelativeDocumentMoniker": "balta.io\\HTMLEditor\\Editor.cs",
+              "ToolTip": "C:\\workspace\\Curso-CSharp\\balta.io\\HTMLEditor\\Editor.cs",
+              "RelativeToolTip": "balta.io\\HTMLEditor\\Editor.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB4AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-09T12:01:36.903Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Menu.cs",
+              "DocumentMoniker": "C:\\workspace\\Curso-CSharp\\balta.io\\HTMLEditor\\Menu.cs",
+              "RelativeDocumentMoniker": "balta.io\\HTMLEditor\\Menu.cs",
+              "ToolTip": "C:\\workspace\\Curso-CSharp\\balta.io\\HTMLEditor\\Menu.cs",
+              "RelativeToolTip": "balta.io\\HTMLEditor\\Menu.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAAAAEkAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-09T11:14:54.213Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\workspace\\Curso-CSharp\\balta.io\\HTMLEditor\\Program.cs",
+              "RelativeDocumentMoniker": "balta.io\\HTMLEditor\\Program.cs",
+              "ToolTip": "C:\\workspace\\Curso-CSharp\\balta.io\\HTMLEditor\\Program.cs",
+              "RelativeToolTip": "balta.io\\HTMLEditor\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-09T11:13:55.545Z",
+              "EditorCaption": ""
             }
           ]
         }

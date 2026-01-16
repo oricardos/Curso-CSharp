@@ -1,0 +1,15 @@
+C:\workspace\Curso-CSharp\balta.io\TextEditor\bin\Debug\net9.0\TextEditor.exe
+C:\workspace\Curso-CSharp\balta.io\TextEditor\bin\Debug\net9.0\TextEditor.deps.json
+C:\workspace\Curso-CSharp\balta.io\TextEditor\bin\Debug\net9.0\TextEditor.runtimeconfig.json
+C:\workspace\Curso-CSharp\balta.io\TextEditor\bin\Debug\net9.0\TextEditor.dll
+C:\workspace\Curso-CSharp\balta.io\TextEditor\bin\Debug\net9.0\TextEditor.pdb
+C:\workspace\Curso-CSharp\balta.io\TextEditor\obj\Debug\net9.0\TextEditor.GeneratedMSBuildEditorConfig.editorconfig
+C:\workspace\Curso-CSharp\balta.io\TextEditor\obj\Debug\net9.0\TextEditor.AssemblyInfoInputs.cache
+C:\workspace\Curso-CSharp\balta.io\TextEditor\obj\Debug\net9.0\TextEditor.AssemblyInfo.cs
+C:\workspace\Curso-CSharp\balta.io\TextEditor\obj\Debug\net9.0\TextEditor.csproj.CoreCompileInputs.cache
+C:\workspace\Curso-CSharp\balta.io\TextEditor\obj\Debug\net9.0\TextEditor.sourcelink.json
+C:\workspace\Curso-CSharp\balta.io\TextEditor\obj\Debug\net9.0\TextEditor.dll
+C:\workspace\Curso-CSharp\balta.io\TextEditor\obj\Debug\net9.0\refint\TextEditor.dll
+C:\workspace\Curso-CSharp\balta.io\TextEditor\obj\Debug\net9.0\TextEditor.pdb
+C:\workspace\Curso-CSharp\balta.io\TextEditor\obj\Debug\net9.0\TextEditor.genruntimeconfig.cache
+C:\workspace\Curso-CSharp\balta.io\TextEditor\obj\Debug\net9.0\ref\TextEditor.dll

@@ -22,7 +22,8 @@ namespace APICatalogo.Controllers
         [HttpGet("produtos")]
         public ActionResult<IEnumerable<Categoria>> GetCategoriasProdutos()
         {
-            return _context.Categorias.Include(c => c.Produtos).ToList();
+            //return _context.Categorias.Include(c => c.Produtos).ToList();
+            return _context.Categorias.Include(p => p.Produtos).Where(c => c.CategoriaId <= 5).ToList();
         }
 
         /// <summary>
@@ -40,7 +41,7 @@ namespace APICatalogo.Controllers
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public ActionResult<IEnumerable<Categoria>> Get()
         {
-            var categorias = _context.Categorias.ToList();
+            var categorias = _context.Categorias.AsNoTracking().ToList();
             if (categorias is null)
             {
                 return NotFound("Nenhuma categoria foi encontada!");

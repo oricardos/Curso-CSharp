@@ -41,13 +41,21 @@ namespace APICatalogo.Controllers
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public ActionResult<IEnumerable<Categoria>> Get()
         {
-            var categorias = _context.Categorias.AsNoTracking().ToList();
-            if (categorias is null)
+            try
             {
-                return NotFound("Nenhuma categoria foi encontada!");
-            }
+                throw new DataMisalignedException();
+                //var categorias = _context.Categorias.AsNoTracking().ToList();
+                //if (categorias is null)
+                //{
+                //    return NotFound("Nenhuma categoria foi encontada!");
+                //}
 
-            return categorias;
+                //return categorias;
+            }
+            catch (Exception ex) 
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, "Ocorreu um erro ao tratar sua solicitação.");
+            }
         }
 
         /// <summary>

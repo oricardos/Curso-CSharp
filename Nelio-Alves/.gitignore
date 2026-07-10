@@ -1,0 +1,33 @@
+## Visual Studio / VS Code
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.wsuo
+DocumentLayout.json
+DocumentLayout.backup.json
+VSWorkspaceState.json
+
+## Build outputs
+[Dd]ebug/
+[Rr]elease/
+bin/
+obj/
+out/
+build/
+
+## .NET
+*.dll
+*.exe
+*.pdb
+*.deps.json
+*.runtimeconfig.json
+*.runtimeconfig.dev.json
+
+## NuGet
+*.nupkg
+packages/
+project.lock.json
+project.fragment.lock.json
+artifacts/

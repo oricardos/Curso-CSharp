@@ -43,14 +43,13 @@ namespace APICatalogo.Controllers
         {
             try
             {
-                throw new DataMisalignedException();
-                //var categorias = _context.Categorias.AsNoTracking().ToList();
-                //if (categorias is null)
-                //{
-                //    return NotFound("Nenhuma categoria foi encontada!");
-                //}
+                var categorias = _context.Categorias.AsNoTracking().ToList();
+                if (categorias is null)
+                {
+                    return NotFound("Nenhuma categoria foi encontada!");
+                }
 
-                //return categorias;
+                return categorias;
             }
             catch (Exception ex) 
             {

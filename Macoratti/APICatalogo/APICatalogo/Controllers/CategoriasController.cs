@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.ComponentModel.DataAnnotations;
 using Microsoft.EntityFrameworkCore;
+using APICatalogo.Filters;
 
 namespace APICatalogo.Controllers
 {
@@ -37,6 +38,7 @@ namespace APICatalogo.Controllers
         /// <response code="200">Retorna todas as categorias</response>
         /// <response code="404">Nenhuma categoria encontrada</response>
         [HttpGet]
+        [ServiceFilter(typeof(ApiLogginFilter))]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public ActionResult<IEnumerable<Categoria>> Get()

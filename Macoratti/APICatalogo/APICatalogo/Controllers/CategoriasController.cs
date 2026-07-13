@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using System.ComponentModel.DataAnnotations;
 using Microsoft.EntityFrameworkCore;
 using APICatalogo.Filters;
+using Microsoft.Extensions.Logging;
 
 namespace APICatalogo.Controllers
 {
@@ -14,10 +15,12 @@ namespace APICatalogo.Controllers
     public class CategoriasController : ControllerBase
     {
         private readonly AppDbContext _context;
+        private readonly ILogger _logger;
 
-        public CategoriasController(AppDbContext context)
+        public CategoriasController(AppDbContext context, ILogger<CategoriasController> logger)
         {
             _context = context;
+            _logger = logger;
         }
 
         [HttpGet("produtos")]
@@ -43,6 +46,7 @@ namespace APICatalogo.Controllers
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public ActionResult<IEnumerable<Categoria>> Get()
         {
+            _logger.LogInformation("*****************GET api/categorias/produtos ***********************");
             try
             {
                 var categorias = _context.Categorias.AsNoTracking().ToList();

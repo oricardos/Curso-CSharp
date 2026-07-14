@@ -1,11 +1,8 @@
 ﻿using APICatalogo.Context;
-using APICatalogo.Models;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using System.ComponentModel.DataAnnotations;
-using Microsoft.EntityFrameworkCore;
 using APICatalogo.Filters;
-using Microsoft.Extensions.Logging;
+using APICatalogo.Models;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace APICatalogo.Controllers
 {
@@ -81,13 +78,14 @@ namespace APICatalogo.Controllers
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public ActionResult<Categoria> Get(int id)
         {
-            var produto = _context.Categorias.FirstOrDefault(p => p.CategoriaId == id);
-            if (produto is null)
+            var categoria = _context.Categorias.FirstOrDefault(p => p.CategoriaId == id);
+            if (categoria is null)
             {
+                _logger.LogWarning($"Nenhuma categoria foi encontrada");
                 return NotFound("Nenhuma categoria foi encontrada!");
             }
 
-            return produto;
+            return Ok(categoria);
         }
 
         /// <summary>
